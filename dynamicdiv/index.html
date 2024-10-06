@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div Dinamico</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+        .container {
+            width: 300px; 
+            height: 300px;
+            border: 1px solid grey;
+        }
+    </style>
+</head>
+<body>
+    <body>
+        <div>
+        <label for="width">Ancho</label>
+        <input type="range" id="width" min="0" max="255">
+        <label for="height">Altura</label>
+        <input type="range" id="height" min="0" max="255">
+        <label for="radio">Radio</label>
+        <input type="range" id="radio" min="0" max="255">
+        <label for="shadow">Sombra</label>
+        <input type="color" >
+    </div>
+    <div class="container"></div>
+    <button id="btnvhange">Cambiar</button>
+    <script src="./app.js"></script>
+
+</body>
+</html> 
