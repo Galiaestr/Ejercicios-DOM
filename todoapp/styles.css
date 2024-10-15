@@ -1,0 +1,36 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+
+.alert {
+    width: 100%;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.danger {
+    border: 1px solid red;
+    background-color: rgba(243, 199, 199, 0.764);
+}
+
+.warning {
+    border: 1px solid orange;
+    background-color: rgb(223, 167, 63);
+}
+
+.sucess {
+    border: 1px solid green;
+    background-color: rgb(147, 197, 154);
+}
