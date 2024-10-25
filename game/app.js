@@ -67,7 +67,7 @@ function displayScore() {
 function checkEat() {
     if (snake[0].x === food.x && snake[0].y === food.y) {
         score++;
-        updateHighScore(score); 
+        updateHighScore(score);
         displayScore();
         food.aparece();
         scoreElement.textContent = `Puntuación: ${score}`;
