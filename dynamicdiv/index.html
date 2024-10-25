@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,28 +12,54 @@
             display: grid;
             place-items: center;
         }
+
         .container {
-            width: 300px; 
+            width: 300px;
             height: 300px;
             border: 1px solid grey;
+            border-radius: 5px;
+            box-shadow: 10pz 5px 5px black;
+        }
+
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+
+        a:active {
+            background-color: #003f7f;
         }
     </style>
 </head>
-<body>
-    <body>
-        <div>
-        <label for="width">Ancho</label>
-        <input type="range" id="width" min="0" max="255">
-        <label for="height">Altura</label>
-        <input type="range" id="height" min="0" max="255">
-        <label for="radio">Radio</label>
-        <input type="range" id="radio" min="0" max="255">
-        <label for="shadow">Sombra</label>
-        <input type="color" >
-    </div>
-    <div class="container"></div>
-    <button id="btnvhange">Cambiar</button>
-    <script src="./app.js"></script>
 
+<body>
+    <div class="container">
+
+        <label for="width">alto</label>
+        <input type="range" id="alto" min="100" max="1000">
+
+        <label for="height">ancho</label>
+        <input type="range" id="ancho" min="100" max="1000">
+
+        <label for="redius">radio</label>
+        <input type="range" id="radio" min="5" max="300">
+
+        <label for="sombra">sombra</label>
+        <input type="range" id="sombra1" min="0" max="50">
+        <input type="range" id="sombra2" min="0" max="50">
+        <input type="range" id="sombra3" min="0" max="50">
+    </div>
+    <a href="../index.html">Atras</a>
+    <script src="./app.js"></script>
 </body>
-</html> 
+
+</html>
